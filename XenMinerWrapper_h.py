@@ -13,8 +13,8 @@ import turtle
 import math
 
 
-cpu_percent = psutil.cpu_percent(1)
-memory_usage = psutil.virtual_memory()[2]
+#cpu_percent = psutil.cpu_percent(1)
+#memory_usage = psutil.virtual_memory()[2]
 
 
 
@@ -83,8 +83,8 @@ class MinerApp(tk.Tk):
         
         
         self.parse_output_var = tk.BooleanVar(value=False)
-        self.parse_output_chk = tk.Checkbutton(self, text="Update", variable=self.parse_output_var)
-        self.parse_output_chk.grid(row=3, column=1, padx=170, pady=2, sticky="w")
+     #   self.parse_output_chk = tk.Checkbutton(self, text="Update", variable=self.parse_output_var)
+      #  self.parse_output_chk.grid(row=3, column=1, padx=170, pady=2, sticky="w")
 
 
 
@@ -96,11 +96,11 @@ class MinerApp(tk.Tk):
         tk.Label(self, text=max_parallel).grid(row=3, column=1, padx=350, pady=10, sticky="w")
 
         tk.Label(self, text="CPU Load").grid(row=3, column=1, padx=250, pady=2, sticky="e")
-        tk.Label(text=psutil.cpu_percent(interval=1)).grid(row=3, column=1, padx=220, pady=10, sticky="e")
+     #   tk.Label(text=psutil.cpu_percent(interval=1)).grid(row=3, column=1, padx=220, pady=10, sticky="e")
         tk.Label(self, text="%").grid(row=3, column=1, padx=200, pady=2, sticky="e")
         
         tk.Label(self, text="MEM Load").grid(row=3, column=1, padx=110, pady=2, sticky="e")
-        tk.Label(text=memory_usage).grid(row=3, column=1, padx=80, pady=10, sticky="e")
+    #    tk.Label(text=memory_usage).grid(row=3, column=1, padx=80, pady=10, sticky="e")
         tk.Label(self, text="%").grid(row=3, column=1, padx=60, pady=2, sticky="e")
 
    
@@ -313,33 +313,33 @@ class MinerApp(tk.Tk):
         webbrowser.open(url)
 
     def load_python_env(self):
-        if os.path.exists('userdata/python_env.txt'):
-            with open('userdata/python_env.txt', 'r') as f:
+        if os.path.exists('python_env.txt'):
+            with open('python_env.txt', 'r') as f:
                 self.python_env.delete(0, tk.END)
                 self.python_env.insert(0, f.read())
 
     def save_python_env(self):
-        with open('userdata/python_env.txt', 'w') as f:
+        with open('python_env.txt', 'w') as f:
             f.write(self.python_env.get())
 
     def load_eth_address(self):
-        if os.path.exists('userdata/eth_address.txt'):
-            with open('userdata/eth_address.txt', 'r') as f:
+        if os.path.exists('eth_address.txt'):
+            with open('eth_address.txt', 'r') as f:
                 self.eth_address.delete(0, tk.END)
                 self.eth_address.insert(0, f.read())
 
     def save_eth_address(self):
-        with open('userdata/eth_address.txt', 'w') as f:
+        with open('eth_address.txt', 'w') as f:
             f.write(self.eth_address.get())
 
     def load_miner_location(self):
-        if os.path.exists('userdata/miner_location.txt'):
-            with open('userdata/miner_location.txt', 'r') as f:
+        if os.path.exists('miner_location.txt'):
+            with open('miner_location.txt', 'r') as f:
                 self.miner_location.delete(0, tk.END)
                 self.miner_location.insert(0, f.read())
 
     def save_miner_location(self):
-        with open('userdata/miner_location.txt', 'w') as f:
+        with open('miner_location.txt', 'w') as f:
             f.write(self.miner_location.get())
 
     def validate_ethereum_address(self, address):
