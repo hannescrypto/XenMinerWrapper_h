@@ -1,0 +1,1 @@
+https://github.com/jacklevin74/xenminer/blob/main/miner.py
