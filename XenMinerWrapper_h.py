@@ -313,33 +313,33 @@ class MinerApp(tk.Tk):
         webbrowser.open(url)
 
     def load_python_env(self):
-        if os.path.exists('python_env.txt'):
-            with open('python_env.txt', 'r') as f:
+        if os.path.exists('XenMinerWrapper_h/userdata/python_env.txt'):
+            with open('XenMinerWrapper_h/userdata/python_env.txt', 'r') as f:
                 self.python_env.delete(0, tk.END)
                 self.python_env.insert(0, f.read())
 
     def save_python_env(self):
-        with open('python_env.txt', 'w') as f:
+        with open('XenMinerWrapper_h/userdata/python_env.txt', 'w') as f:
             f.write(self.python_env.get())
 
     def load_eth_address(self):
-        if os.path.exists('eth_address.txt'):
-            with open('eth_address.txt', 'r') as f:
+        if os.path.exists('XenMinerWrapper_h/userdata/eth_address.txt'):
+            with open('XenMinerWrapper_h/userdata/eth_address.txt', 'r') as f:
                 self.eth_address.delete(0, tk.END)
                 self.eth_address.insert(0, f.read())
 
     def save_eth_address(self):
-        with open('eth_address.txt', 'w') as f:
+        with open('XenMinerWrapper_h/userdata/eth_address.txt', 'w') as f:
             f.write(self.eth_address.get())
 
     def load_miner_location(self):
-        if os.path.exists('miner_location.txt'):
-            with open('miner_location.txt', 'r') as f:
+        if os.path.exists('XenMinerWrapper_h/userdata/miner_location.txt'):
+            with open('XenMinerWrapper_h/userdata/miner_location.txt', 'r') as f:
                 self.miner_location.delete(0, tk.END)
                 self.miner_location.insert(0, f.read())
 
     def save_miner_location(self):
-        with open('miner_location.txt', 'w') as f:
+        with open('XenMinerWrapper_h/userdata/miner_location.txt', 'w') as f:
             f.write(self.miner_location.get())
 
     def validate_ethereum_address(self, address):
