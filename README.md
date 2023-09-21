@@ -1,3 +1,20 @@
+hannescrypto modded version 
+changes
+
+1.) shows CPU cores/threads 
+2.) show CPU Load/Mem Load (sadly only update on Startup) 
+3.) store all userfiles incl. Loaction of miner.py in userdata folder
+4.) works with newest miner.py but weird output because of new colorscheme in miner.py
+
+Date 21.09.2023
+
+
+
+
+
+
+
+
 # XEN.pub's XenMiner Wrapper
 
 Welcome to the XEN.pub's XenMiner Wrapper, a Python-based user interface for XenMiner. This tool simplifies the process of setting up and running the XenMiner by providing a user-friendly interface that seamlessly works across Linux, macOS, and Windows.
