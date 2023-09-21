@@ -9,6 +9,10 @@ changes
 
 4.) works with newest miner.py but weird output because of new colorscheme in miner.py
 
+5.) made the window wider so no problems with the miner text splitet up in 2 rows
+
+
+
 
 
 Date 21.09.2023
