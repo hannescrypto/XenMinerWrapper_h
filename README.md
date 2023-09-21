@@ -1,7 +1,7 @@
 hannescrypto modded version 
 changes
 
-1.) shows CPU cores/threads 
+1.) shows CPU cores/threads (and now you can select the threads not the cores)
 
 2.) show CPU Load/Mem Load (sadly only update on Startup) 
 
