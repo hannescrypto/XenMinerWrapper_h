@@ -89,11 +89,11 @@ class MinerApp(tk.Tk):
 
 
 
-        tk.Label(self, text="CPU Cores/Threads").grid(row=3, column=1, padx=175, pady=2, sticky="w")
-        tk.Label(self, text=max_parallel2).grid(row=3, column=1, padx=325, pady=10, sticky="w")
+        tk.Label(self, text="CPU C/T").grid(row=3, column=1, padx=180, pady=2, sticky="w")
+        tk.Label(self, text=max_parallel2).grid(row=3, column=1, padx=250, pady=10, sticky="w")
         
-        tk.Label(self, text="/").grid(row=3, column=1, padx=340, pady=2, sticky="w")
-        tk.Label(self, text=max_parallel).grid(row=3, column=1, padx=355, pady=10, sticky="w")
+        tk.Label(self, text="/").grid(row=3, column=1, padx=265, pady=2, sticky="w")
+        tk.Label(self, text=max_parallel).grid(row=3, column=1, padx=280, pady=10, sticky="w")
 
         tk.Label(self, text="CPU Load").grid(row=3, column=1, padx=250, pady=2, sticky="e")
      #   tk.Label(text=psutil.cpu_percent(interval=1)).grid(row=3, column=1, padx=220, pady=10, sticky="e")
